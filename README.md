@@ -1,4 +1,4 @@
-### Arbalest Rocketry Website
+# Arbalest Rocketry Website by `Jordan Birley`
 
 This repository contains the source code for the Arbalest Rocketry website, which provides information about our rocket projects, team updates, and news.
 
