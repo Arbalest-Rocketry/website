@@ -10,6 +10,7 @@ This repository contains the source code for the Arbalest Rocketry website, whic
 - **Images/**: General images.
 - **Newsletters/**: Archived newsletters.
 - **Projects/**: Information on various projects.
+- **Sponsorship/**: Information on our sponsors and sponsorship packages.
 
 ### Cloning the Repository
 ```sh
