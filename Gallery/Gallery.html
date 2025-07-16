@@ -5,128 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - Arbalest Rocketry</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../path/to/lightbox.min.css"> 
     <link rel="stylesheet" href="../styles.css"> 
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="../index.html">Arbalest Rocketry</a> 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="../index.html"><img src="../Images/ArbalestLogos/Arbalest_Logo_2025_nobg.png" alt="Arbalest Rocketry Logo 2025" class="img-fluid" style="width:55px; height:55px;"> Arbalest Rocketry</a>
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../index.html#about">About Us</a> 
+                <a class="nav-link" href="../index.html#about">About Us</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProjects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Projects
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownProjects">
-                    <a class="dropdown-item" href="../Projects/projects.html#goose1">Goose1</a>
-                    <a class="dropdown-item" href="../Projects/projects.html#goose2">Goose2</a>
-                    <a class="dropdown-item" href="../Projects/projects.html#goose3">Goose3</a>
-                    <a class="dropdown-item" href="../Projects/projects.html#goose4">Goose4 - Current Project</a>
+            <li class="nav-item">
+                <a class="nav-link" href="../Projects/Projects.html">Projects</a> 
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../Team/Team.html">Team</a> 
+            </li>
+			<!--<li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="Projects/Projects.html" id="navbarDropdownProjects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownProjects" style="background-color: #373c41;">
+                    <a class="dropdown-item" style="color: white;" href="../Projects/Projects.html#goose1">Goose 1</a>
+                    <a class="dropdown-item" style="color: white;" href="../Projects/Projects.html#goose2">Goose 2</a>
+                    <a class="dropdown-item" style="color: white;" href="../Projects/Projects.html#goose3">Goose 3</a>
+                    <a class="dropdown-item" style="color: white;" href="../Projects/Projects.html#goose4">Goose 4</a>
                 </div>
+            </li>-->
+            <li class="nav-item">
+                <a class="nav-link active" href="Gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
+                <a class="nav-link" href="../Sponsorship/Sponsors.html">Sponsors</a> 
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../Flyby/Flyby.html">Monthly Flyby</a> 
+                <a class="nav-link" href="../Flyby/Flyby.html">Quarterly Flyby</a>
             </li>
         </ul>
     </div>
 </nav>
 
-
 <!-- Banner Section with Logo -->
 <section id="banner" class="banner d-flex justify-content-center align-items-center">
-    <img src="../Images/AB logo.png" alt="Arbalest Rocketry Logo" class="img-fluid">
+    <img src="../Images/ArbalestLogos/AB_logo.png" alt="Arbalest Rocketry Logo" class="img-fluid">
 </section>
-<div class="divider-line"></div> 
+
+<div class="divider-line"></div>
+
 <!-- Gallery Section -->
 <section id="gallery" class="py-5">
     <div class="container">
         <h2 class="text-center mb-4">Gallery</h2>
-        <!-- Quick Navigation Buttons -->
-        <div class="text-center mb-5">
-            <button onclick="document.getElementById('goose1-gallery').scrollIntoView();">Goose 1</button>
-            <button onclick="document.getElementById('goose2-gallery').scrollIntoView();">Goose 2</button>
-            <button onclick="document.getElementById('goose3-gallery').scrollIntoView();">Goose 3</button>
-            <button onclick="document.getElementById('goose4-gallery').scrollIntoView();">Goose 4</button>
-        </div>
-        <!-- Galleries -->
-        <div id="goose1-gallery" class="mb-5">
-            <h3>Goose 1</h3>
-            <!-- Thumbnail images with lightbox links -->
-            <a href="../Images/Goose1/goose1.png" data-lightbox="goose1-gallery" data-title="CAD model of our first design Goose 1">
-                <img src="../Images/Goose1/goose1.png" alt="Goose 1">
-            </a>
-        </div>
-        <div id="goose2-gallery" class="mb-5">
-            <h3>Goose 2</h3>
-            <a href="../Images/Goose2/3r34.jpg" data-lightbox="goose2-gallery" data-title="Goose 2 Image Description">
-                <img src="../Images/Goose2" alt="Goose 2">
-            </a>
+        <div class="gallery-grid">
+            <!-- Gallery for Goose 2 -->
+            <div class="gallery-block">
+                <h3>Goose 2</h3>
+                <div class="image-grid">
+					<img src="../Images/Goose2/G2_LaunchCanada12.jpg" alt="Description">
+                    <img src="../Images/Goose2/G2_LaunchCanada1.jpg" alt="Description">
+                    <img src="../Images/Goose2/G2_LaunchCanada2.jpg" alt="Description">
+                    <img src="../Images/Goose2/G2_LaunchCanada3.jpg" alt="Description">
+					<img src="../Images/Goose2/G2_LaunchCanada4.jpg" alt="Description">
+                    <img src="../Images/Goose2/G2_LaunchCanada5.jpg" alt="Description">
+                    <img src="../Images/Goose2/G2_LaunchCanada6.jpg" alt="Description">
+                    <img src="../Images/Goose2/G2_LaunchCanada7.jpg" alt="Description">
+					<img src="../Images/Goose2/G2_LaunchCanada8.jpg" alt="Description">
+                    <img src="../Images/Goose2/G2_LaunchCanada9.jpg" alt="Description">
+                    <img src="../Images/Goose2/goose2.png" alt="Description">
+					<img src="../Images/Goose2/goose2-1.jpg" alt="Description">
+                    <img src="../Images/Goose2/goose2-3.jpg" alt="Description">
+                    <img src="../Images/Goose2/G2_LaunchCanada11.png" alt="Description">
+					<img src="../Images/Goose2/G2_LaunchCanada13.jpg" alt="Description">
+                    <img src="../Images/Goose2/G2_group_pic.jpg" alt="Description">
+                </div>
+            </div>
+			
+			 <!-- Gallery for Goose 3 -->
+            <div class="gallery-block">
+                <h3>Goose 3</h3>
+                <div class="image-grid">
+					<img src="../Images/Goose3/goose3-1.jpg" alt="Description">
+                    <img src="../Images/Goose3/goose3-2.jpg" alt="Description">
+                    <img src="../Images/Goose3/goose3-3.jpg" alt="Description">
+                    <img src="../Images/Goose3/goose3-4.jpg" alt="Description">
+					<img src="../Images/Goose3/goose3-5.jpg" alt="Description">
+                    <img src="../Images/Goose3/goose3-6.jpg" alt="Description">
+                    <img src="../Images/Goose3/goose3-7.jpg" alt="Description">
+					<img src="../Images/Goose3/goose3-8.jpg" alt="Description">
+                    <img src="../Images/Goose3/G3_LaunchCanada1.jpg" alt="Description">
+					<img src="../Images/Goose3/goose3-10.jpg" alt="Description">
+                    <img src="../Images/Goose3/goose3-11.jpg" alt="Description">
+                </div>
+            </div>
 
-            <a href="../path/to/full/image2.jpg" data-lightbox="goose2-gallery" data-title="Goose 2 Image Description">
-                <img src="../path/to/thumbnail/image2.jpg" alt="Goose 2">
-            </a>
-			
-            <a href="../path/to/full/image2.jpg" data-lightbox="goose2-gallery" data-title="Goose 2 Image Description">
-                <img src="../path/to/thumbnail/image2.jpg" alt="Goose 2">
-            </a>
-        </div>
-        <div id="goose3-gallery" class="mb-5">
-            <h3>Goose 3</h3>
-            <a href="../path/to/full/image3.jpg" data-lightbox="goose3-gallery" data-title="Goose 3 Image Description">
-                <img src="../path/to/thumbnail/image3.jpg" alt="Goose 3">
-            </a>
-            
-			<a href="../path/to/full/image3.jpg" data-lightbox="goose3-gallery" data-title="Goose 3 Image Description">
-                <img src="../path/to/thumbnail/image3.jpg" alt="Goose 3">
-            </a>
-			
-			<a href="../path/to/full/image3.jpg" data-lightbox="goose3-gallery" data-title="Goose 3 Image Description">
-                <img src="../path/to/thumbnail/image3.jpg" alt="Goose 3">
-            </a>
-			
-			<a href="../path/to/full/image3.jpg" data-lightbox="goose3-gallery" data-title="Goose 3 Image Description">
-                <img src="../path/to/thumbnail/image3.jpg" alt="Goose 3">
-            </a>
-        </div>
-        <div id="goose4-gallery">
-            <h3>Goose 4</h3>
-            <a href="../path/to/full/image4.jpg" data-lightbox="goose4-gallery" data-title="Goose 4 Image Description">
-                <img src="../path/to/thumbnail/image4.jpg" alt="Goose 4">
-            </a>
-
-            <a href="../path/to/full/image4.jpg" data-lightbox="goose4-gallery" data-title="Goose 4 Image Description">
-                <img src="../path/to/thumbnail/image4.jpg" alt="Goose 4">
-            </a>
-			
-            <a href="../path/to/full/image4.jpg" data-lightbox="goose4-gallery" data-title="Goose 4 Image Description">
-                <img src="../path/to/thumbnail/image4.jpg" alt="Goose 4">
-            </a>
-			
-            <a href="../path/to/full/image4.jpg" data-lightbox="goose4-gallery" data-title="Goose 4 Image Description">
-                <img src="../path/to/thumbnail/image4.jpg" alt="Goose 4">
-            </a>
+            <!-- Gallery for Goose 4 -->
+            <div class="gallery-block">
+                <h3>Goose 4</h3>
+                <div class="image-grid">
+                    <img src="../Images/Goose4/goose4-1.jpg" alt="Description">
+                    <img src="../Images/Goose4/goose4-2.jpg" alt="Description">
+                    <img src="../Images/Goose4/goose4-3.jpg" alt="Description">
+                    <img src="../Images/Goose4/goose4-5.jpg" alt="Description">
+                    <img src="../Images/Goose4/goose4-6.jpg" alt="Description">
+                    <img src="../Images/Goose4/goose4-7.jpg" alt="Description">
+                </div>
+            </div>
         </div>
     </div>
-</section>	
-	
+</section>
 
-	
 <!-- Footer -->
 <footer class="footer">
-    <div class="red-bar"></div> 
+    <div class="red-bar"></div>
     <div class="footer-content container">
         <div class="row">
             <div class="col-md-6 footer-section">
@@ -136,22 +131,21 @@
             <div class="col-md-6 footer-section">
                 <h5>Quick Links</h5>
                 <ul class="list-unstyled">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="../Index.html">About Us</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#about">About Us</a></li>
                     <li><a href="../Projects/Projects.html">Projects</a></li>
-                    <li><a href="../Gallery/Gallery.html">Gallery</a></li>
-                    <li><a href="../Flyby/Flyby.html">Monthly Flyby</a></li>
+                    <li><a href="../Team/Team.html">Team</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="../Sponsorship/Sponsors.html">Sponsors</a></li>
+                    <li><a href="../Flyby/Flyby.html">Quarterly Flyby</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </footer>
 
-<!-- Lightbox plugin JavaScript and Bootstrap's JavaScript -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="../path/to/lightbox-plus-jquery.min.js"></script> 
-
 </body>
 </html>
